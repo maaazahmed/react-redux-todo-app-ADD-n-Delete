@@ -14,6 +14,12 @@ class TodoList extends Component {
     }
 
 
+
+    editeTodo(){
+            
+    }
+
+
     render(){
         return(   
             <div>
@@ -26,6 +32,8 @@ class TodoList extends Component {
                             <li key={ind}>
                                 {val.todo}
                                 <button onClick={this.deleteTodo.bind(this ,val.id, ind)} >delete</button>
+                                <button onClick={this.editeTodo.bind(this ,val.id, ind)} >Edit</button>
+                               
                             </li>
                         )
                      })}
